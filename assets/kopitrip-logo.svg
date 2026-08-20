@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0099FF"/>
+      <stop offset="100%" stop-color="#0066CC"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B4A"/>
+      <stop offset="100%" stop-color="#E85D3F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="32" y="32" width="960" height="960" rx="220" ry="220" fill="url(#bg)"/>
+
+  <!-- Coffee cup -->
+  <g transform="translate(512, 430)">
+    <!-- Cup body - rounded rectangle -->
+    <rect x="-190" y="-120" width="380" height="280" rx="60" ry="60" fill="#FFFFFF"/>
+    <!-- Cup handle -->
+    <path d="M 190 -40 a 60 60 0 1 1 0 110" fill="none" stroke="#FFFFFF" stroke-width="42" stroke-linecap="round"/>
+    <!-- Coffee surface -->
+    <rect x="-190" y="-120" width="380" height="70" rx="35" ry="35" fill="url(#coffee)"/>
+    <!-- Steam -->
+    <g stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M -90 -170 c -20 -30 20 -30 0 -60"/>
+      <path d="M 0 -180 c -20 -30 20 -30 0 -60"/>
+      <path d="M 90 -170 c -20 -30 20 -30 0 -60"/>
+    </g>
+  </g>
+
+  <!-- Location pin -->
+  <g transform="translate(760, 720)">
+    <path d="M 0 -160 a 85 85 0 1 1 170 0 c 0 113 -85 170 -85 170 s -85 -57 -85 -170 z" fill="#FF6B4A"/>
+    <circle cx="85" cy="-150" r="45" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Coffee bean -->
+  <g transform="translate(250, 700) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="70" ry="95" fill="#FFFFFF"/>
+    <path d="M -8 -85 c 40 40 40 130 0 170" fill="none" stroke="#FF6B4A" stroke-width="22" stroke-linecap="round"/>
+    <path d="M 8 -85 c -40 40 -40 130 0 170" fill="none" stroke="#FF6B4A" stroke-width="22" stroke-linecap="round"/>
+  </g>
+</svg>
